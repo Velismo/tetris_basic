@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentRotation = 0
         }
         current = theTetrominoes[random][currentRotation]
+        draw()
     }
 
 
