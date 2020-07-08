@@ -6,6 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const height = 20
     let currentPosition = 4
 
+    //assign functions to keycodes
+    function control(e) {
+        if(e.KeyCode === 39) {
+            moveRight()
+        } else if (e.KeyCode === 38) {
+            rotate()
+        } else if (e.KeyCode === 37) {
+            moveLeft()
+        } else if (e.KeyCode === 40) {
+            moveDown()
+        }
+    }
+
+    document.addEventListener('keyup', control)
+
     //The tetrominoes
     const lTetromino = [
         [1, width+1, width*2+1, 2],
@@ -102,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
         current = theTetrominoes[random][currentRotation]
         draw()
     }
+
+    
 
 
 
