@@ -5,11 +5,22 @@ div {
 }
 
 .grid {
-    background-color: blue;
     width: 400px;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.previous-grid {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.previous-shape {
+    height: 80px;
+    width: 80px;
 }
 
 .block {
@@ -18,4 +29,8 @@ div {
 
 .block2 {
     background-color: purple;
+}
+
+.block3 {
+    background-color: green;
 }
